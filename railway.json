@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    {
+      "type": "apt",
+      "config": {
+        "packages": [
+          "chromium",
+          "chromium-driver"
+        ]
+      }
+    }
+  ]
+}
