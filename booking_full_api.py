@@ -16,6 +16,7 @@ import requests
 from bs4 import BeautifulSoup
 from fastapi import FastAPI, Query, HTTPException
 from fastapi.responses import JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
 
 # Selenium
 from selenium import webdriver
@@ -24,7 +25,6 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
 
 # Supabase
 from supabase import create_client, Client
@@ -41,10 +41,8 @@ logger = logging.getLogger(__name__)
 # ─── Supabase ─────────────────────────────────────────────────────────────
 SUPA_URL = os.getenv("SUPABASE_URL")
 SUPA_KEY = os.getenv("SUPABASE_KEY")      # prefira a Service Role key
-
 if not SUPA_URL or not SUPA_KEY:
     raise RuntimeError("Defina SUPABASE_URL e SUPABASE_KEY no .env")
-
 supabase: Client = create_client(SUPA_URL, SUPA_KEY)
 
 # ─── Configurações ────────────────────────────────────────────────────────
@@ -56,7 +54,7 @@ HEADERS = {
     )
 }
 REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", 30))
-MAX_CAL_MONTHS = int(os.getenv("MAX_CAL_MONTHS", 12))
+MAX_CAL_MONTHS   = int(os.getenv("MAX_CAL_MONTHS", 12))
 
 app = FastAPI(
     title="Booking Full Scraper API",
@@ -64,12 +62,17 @@ app = FastAPI(
     description="Scrapes Booking.com listings and stores results in Supabase",
 )
 
+# ─── Habilita CORS para todas as origens ───────────────────────────────────
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],            # ou especifique ["http://localhost:5500"]
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # ─── Utilitários ──────────────────────────────────────────────────────────
 def canonicalize_url(raw_url: str) -> str:
-    """
-    Remove parâmetros (“?…”) e fragmentos (“#…”) da URL
-    para evitar excesso de tamanho e padronizar o valor salvo.
-    """
     parts = urlsplit(raw_url)
     clean = urlunsplit((parts.scheme, parts.netloc, parts.path, '', ''))
     return clean.rstrip('/')
@@ -81,7 +84,6 @@ def _get_soup(url: str) -> BeautifulSoup:
     try:
         resp = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
-        # usa o parser nativo do Python em vez do lxml
         return BeautifulSoup(resp.text, "html.parser")
     except Exception as e:
         logger.error(f"Falha no GET: {e}")
@@ -90,7 +92,6 @@ def _get_soup(url: str) -> BeautifulSoup:
 # ─── Scrapers ─────────────────────────────────────────────────────────────
 def scrape_images_and_details(url: str):
     soup = _get_soup(url)
-
     image_urls: List[str] = []
     for img in soup.find_all("img", src=True):
         src = img["src"]
@@ -98,16 +99,12 @@ def scrape_images_and_details(url: str):
             full = requests.compat.urljoin(url, src)
             if full not in image_urls:
                 image_urls.append(full)
-
     desc_tag = soup.find("p", {"data-testid": "property-description"})
     description = desc_tag.get_text(strip=True) if desc_tag else ""
-
     fac_tags = soup.select('div[data-testid="property-most-popular-facilities-wrapper"] li')
     main_facilities = [li.get_text(strip=True) for li in fac_tags]
-
     logger.info(f"Imagens: {len(image_urls)} | Facilidades: {len(main_facilities)}")
     return image_urls, description, main_facilities
-
 
 def scrape_calendar_prices(url: str) -> Dict[str, int]:
     opts = Options()
@@ -117,18 +114,17 @@ def scrape_calendar_prices(url: str) -> Dict[str, int]:
     opts.add_argument("--disable-dev-shm-usage")
 
     driver = None
+    prices: Dict[str, int] = {}
     try:
         service = Service("/usr/bin/chromedriver")
         driver = webdriver.Chrome(service=service, options=opts)
         wait = WebDriverWait(driver, 15)
         driver.get(url)
-
         wait.until(EC.element_to_be_clickable(
             (By.CSS_SELECTOR, "[data-testid='searchbox-dates-container'] button")
         )).click()
 
-        prices: Dict[str, int] = {}
-        for m in range(MAX_CAL_MONTHS):
+        for _ in range(MAX_CAL_MONTHS):
             cal = wait.until(EC.presence_of_element_located(
                 (By.CSS_SELECTOR, "[data-testid='searchbox-datepicker-calendar']")
             ))
@@ -153,41 +149,35 @@ def scrape_calendar_prices(url: str) -> Dict[str, int]:
             except Exception:
                 break
 
-        logger.info(f"Preços capturados: {len(prices)} datas")
-        return dict(sorted(prices.items()))
     except Exception as e:
         logger.error(f"Erro Selenium: {e}")
-        return {}
     finally:
         if driver:
             driver.quit()
 
+    logger.info(f"Preços capturados: {len(prices)} datas")
+    return dict(sorted(prices.items()))
+
 # ─── Persistência ─────────────────────────────────────────────────────────
 def save_to_supabase(data: dict) -> dict:
-    try:
-        resp = (
-            supabase.table("booking_ads")
-            .upsert(data, on_conflict="url_hash", ignore_duplicates=False)
-            .execute()
-        )
-        if getattr(resp, "data", None):
-            logger.info("Registro salvo/atualizado.")
-            return resp.data[0]
-        raise ValueError("Resposta vazia do Supabase")
-    except Exception as e:
-        logger.error(f"Erro BD: {e}")
-        raise HTTPException(status_code=500, detail=f"Erro ao salvar no banco: {e}")
+    resp = (
+        supabase.table("booking_ads")
+                .upsert(data, on_conflict="url_hash", ignore_duplicates=False)
+                .execute()
+    )
+    if getattr(resp, "data", None):
+        logger.info("Registro salvo/atualizado.")
+        return resp.data[0]
+    raise HTTPException(status_code=500, detail="Resposta vazia do Supabase")
 
 # ─── End-points ───────────────────────────────────────────────────────────
 @app.get("/scrape", response_class=JSONResponse)
 def scrape(url: str = Query(..., description="URL completa do anúncio no Booking.com")):
     logger.info(f"Scraping iniciado: {url}")
-
     canonical_url = canonicalize_url(url)
     url_hash      = url_md5(canonical_url)
-
-    imgs, desc, facs = scrape_images_and_details(url)
-    cal_prices        = scrape_calendar_prices(url)
+    imgs, desc, facs = scrape_images_and_details(canonical_url)
+    cal_prices       = scrape_calendar_prices(canonical_url)
 
     payload = {
         "url": canonical_url,
@@ -198,9 +188,7 @@ def scrape(url: str = Query(..., description="URL completa do anúncio no Bookin
         "calendar_prices": cal_prices,
         "scraped_at": dt.datetime.utcnow().isoformat(),
     }
-
     row = save_to_supabase(payload)
-
     return {
         "status": "success",
         "message": "Dados extraídos e gravados no Supabase",
@@ -222,25 +210,8 @@ def health_check():
 def list_ads(limit: int = Query(10, description="Máximo de anúncios retornados")):
     try:
         r = supabase.table("booking_ads") \
-            .select("id, url, scraped_at, updated_at") \
-            .order("scraped_at", desc=True).limit(limit).execute()
+                    .select("*") \
+                    .order("scraped_at", desc=True) \
+                    .limit(limit) \
+                    .execute()
         return {"status": "success", "count": len(r.data or []), "ads": r.data or []}
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Erro ao listar: {e}")
-
-@app.get("/ads/{ad_id}")
-def get_ad(ad_id: int):
-    try:
-        r = supabase.table("booking_ads").select("*").eq("id", ad_id).execute()
-        if not r.data:
-            raise HTTPException(status_code=404, detail="Anúncio não encontrado")
-        return {"status": "success", "data": r.data[0]}
-    except HTTPException:
-        raise
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Erro BD: {e}")
-
-if __name__ == "__main__":
-    import uvicorn
-    port = int(os.getenv("PORT", 8000))
-    uvicorn.run("booking_full_api:app", host="0.0.0.0", port=port, reload=True)
