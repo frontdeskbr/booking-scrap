@@ -1,13 +1,4 @@
 {
-  "plugins": [
-    {
-      "type": "apt",
-      "config": {
-        "packages": [
-          "chromium",
-          "chromium-driver"
-        ]
-      }
-    }
-  ]
+  "build": { "builder": "NIXPACKS" },
+  "plugins": [{ "type": "apt" }]
 }
