@@ -8,7 +8,7 @@ API FastAPI que:
  • grava os dados em Supabase (tabela booking_ads), usando url_hash como chave.
 """
 
-import os, re, time, json, hashlib, datetime as dt, logging
+import os, re, time, hashlib, datetime as dt, logging
 from typing import List, Dict
 from urllib.parse import urlsplit, urlunsplit
 
@@ -40,7 +40,7 @@ logger = logging.getLogger(__name__)
 
 # ─── Supabase ─────────────────────────────────────────────────────────────
 SUPA_URL = os.getenv("SUPABASE_URL")
-SUPA_KEY = os.getenv("SUPABASE_KEY")      # prefira a Service Role key
+SUPA_KEY = os.getenv("SUPABASE_KEY")
 if not SUPA_URL or not SUPA_KEY:
     raise RuntimeError("Defina SUPABASE_URL e SUPABASE_KEY no .env")
 supabase: Client = create_client(SUPA_URL, SUPA_KEY)
@@ -65,7 +65,7 @@ app = FastAPI(
 # ─── Habilita CORS para todas as origens ───────────────────────────────────
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],            # ou especifique ["http://localhost:5500"]
+    allow_origins=["*"],            # ou especifique uma lista de domínios
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -137,24 +137,21 @@ def scrape_calendar_prices(url: str) -> Dict[str, int]:
                     price = int(re.sub(r"[^\d]", "", price_text)) if price_text else None
                     if price:
                         prices[date] = price
-                except Exception:
+                except:
                     continue
-
             try:
                 cal.find_element(
                     By.CSS_SELECTOR,
-                    "button[aria-label='Mês seguinte'], button[aria-label*='seguinte']"
+                    "button[aria-label*='seguinte'], button[aria-label*='next']"
                 ).click()
                 time.sleep(0.35)
-            except Exception:
+            except:
                 break
-
     except Exception as e:
         logger.error(f"Erro Selenium: {e}")
     finally:
         if driver:
             driver.quit()
-
     logger.info(f"Preços capturados: {len(prices)} datas")
     return dict(sorted(prices.items()))
 
@@ -170,18 +167,18 @@ def save_to_supabase(data: dict) -> dict:
         return resp.data[0]
     raise HTTPException(status_code=500, detail="Resposta vazia do Supabase")
 
-# ─── End-points ───────────────────────────────────────────────────────────
+# ─── Endpoints ────────────────────────────────────────────────────────────
 @app.get("/scrape", response_class=JSONResponse)
 def scrape(url: str = Query(..., description="URL completa do anúncio no Booking.com")):
     logger.info(f"Scraping iniciado: {url}")
-    canonical_url = canonicalize_url(url)
-    url_hash      = url_md5(canonical_url)
-    imgs, desc, facs = scrape_images_and_details(canonical_url)
-    cal_prices       = scrape_calendar_prices(canonical_url)
+    canonical = canonicalize_url(url)
+    hsh       = url_md5(canonical)
+    imgs, desc, facs = scrape_images_and_details(canonical)
+    cal_prices       = scrape_calendar_prices(canonical)
 
     payload = {
-        "url": canonical_url,
-        "url_hash": url_hash,
+        "url": canonical,
+        "url_hash": hsh,
         "image_urls": imgs,
         "description": desc,
         "main_facilities": facs,
@@ -189,29 +186,28 @@ def scrape(url: str = Query(..., description="URL completa do anúncio no Bookin
         "scraped_at": dt.datetime.utcnow().isoformat(),
     }
     row = save_to_supabase(payload)
-    return {
-        "status": "success",
-        "message": "Dados extraídos e gravados no Supabase",
-        "data": {
-            "id": row.get("id"),
-            "url": row["url"],
-            "image_count": len(imgs),
-            "facilities_count": len(facs),
-            "price_dates_count": len(cal_prices),
-            "scraped_at": row.get("scraped_at"),
-        },
-    }
+    return {"status":"success", "data": row}
 
 @app.get("/health")
 def health_check():
-    return {"status": "healthy", "timestamp": dt.datetime.utcnow().isoformat(), "version": "1.2.0"}
+    return {"status":"healthy","timestamp":dt.datetime.utcnow().isoformat()}
 
 @app.get("/ads")
 def list_ads(limit: int = Query(10, description="Máximo de anúncios retornados")):
-    try:
-        r = supabase.table("booking_ads") \
-                    .select("*") \
-                    .order("scraped_at", desc=True) \
-                    .limit(limit) \
-                    .execute()
-        return {"status": "success", "count": len(r.data or []), "ads": r.data or []}
+    r = (supabase.table("booking_ads")
+               .select("*")
+               .order("scraped_at", desc=True)
+               .limit(limit)
+               .execute())
+    return {"status":"success","count": len(r.data or []),"ads": r.data or []}
+
+@app.get("/ads/{ad_id}")
+def get_ad(ad_id: int):
+    r = supabase.table("booking_ads").select("*").eq("id", ad_id).execute()
+    if not r.data:
+        raise HTTPException(status_code=404, detail="Anúncio não encontrado")
+    return {"status":"success","data": r.data[0]}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("booking_full_api:app", host="0.0.0.0", port=int(os.getenv("PORT",8000)), reload=True)
