@@ -6,3 +6,4 @@ selenium
 webdriver-manager
 supabase
 python-dotenv
+starlette-cors
