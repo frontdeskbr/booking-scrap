@@ -7,21 +7,21 @@ const names=['janeiro','fevereiro','março','abril','maio','junho','julho','agos
 const collectScript=({names})=>{
  const out={};const start=new Date();start.setDate(1);start.setHours(0,0,0,0);
  const end=new Date(start.getFullYear(),start.getMonth()+12,1);
- for(const table of [...document.querySelectorAll('table')].filter(t=>/dom\\.|seg\\.|ter\\./i.test(t.innerText))){
+ for(const table of [...document.querySelectorAll('table')].filter(t=>/dom\.|seg\.|ter\./i.test(t.innerText))){
   let prev=table.previousElementSibling,head='';
   for(let j=0;j<5&&prev;j++,prev=prev.previousElementSibling)head+=' '+prev.innerText;
   if(!head.trim())head=table.parentElement?.parentElement?.innerText.slice(0,100)||'';
-  const match=head.toLowerCase().match(/(janeiro|fevereiro|março|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro)\\s+de\\s+(\\d{4})/);
+  const match=head.toLowerCase().match(/(janeiro|fevereiro|março|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro)\s+de\s+(\d{4})/);
   if(!match)continue;
   const month=names.indexOf(match[1]),year=Number(match[2]);
   for(const td of table.querySelectorAll('td')){
-   const parts=td.innerText.trim().split(/\\s+/),day=Number(parts[0]);
+   const parts=td.innerText.trim().split(/\s+/),day=Number(parts[0]);
    if(!day||day>31||parts.length<2)continue;
    const date=new Date(year,month,day);
    if(date<start||date>=end)continue;
    const raw=parts[1];
-   if(!/^(?:[\\d.,]+K?|—)$/i.test(raw))continue;
-   const price=raw==='—'?null:/K$/i.test(raw)?Math.round(parseFloat(raw.replace(',','.'))*1000):Number(raw.replace(/\\./g,'').replace(',','.'));
+   if(!/^(?:[\d.,]+K?|—)$/i.test(raw))continue;
+   const price=raw==='—'?null:/K$/i.test(raw)?Math.round(parseFloat(raw.replace(',','.'))*1000):Number(raw.replace(/\./g,'').replace(',','.'));
    if(price!==null&&(!Number.isFinite(price)||price<=0))continue;
    const key=[year,String(month+1).padStart(2,'0'),String(day).padStart(2,'0')].join('-');
    out[key]={price,approx:/K$/i.test(raw)};
@@ -30,7 +30,7 @@ const collectScript=({names})=>{
  return out;
 };
 for(const hotel of hotels){
- const slug=new URL(hotel.url).pathname.split('/').pop().replace(/\\.html$/,'');
+ const slug=new URL(hotel.url).pathname.split('/').pop().replace(/\.html$/,'');
  const page=await browser.newPage({locale:'pt-BR',timezoneId:'America/Sao_Paulo',viewport:{width:1440,height:1000}});
  const all={};
  try{
