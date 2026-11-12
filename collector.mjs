@@ -36,6 +36,10 @@ for(const hotel of hotels){
  try{
   await page.goto(hotel.url,{waitUntil:'domcontentloaded',timeout:45000});
   await page.waitForTimeout(3500);
+  console.log('PAGE',page.url(),'TITLE',await page.title());
+  console.log('BUTTONS',(await page.locator('button').allTextContents()).slice(0,35).map(x=>x.trim().slice(0,45)));
+  console.log('TABLES',await page.locator('table').count(),'BODY',(await page.locator('body').innerText()).slice(0,700));
+  for(const sel of ['[data-testid="searchbox-dates-container"]','[data-testid="date-display-field-start"]','button[aria-label*="data"]','[data-testid="searchbox-dates-checkin"]']){try{let el=page.locator(sel).first();if(await el.count()){await el.click({timeout:1500});await page.waitForTimeout(600);break}}catch{}}
   for(let i=0;i<13;i++){
    const found=await page.evaluate(collectScript,{names});
    Object.assign(all,found);
