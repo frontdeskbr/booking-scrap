@@ -1,0 +1,31 @@
+name: Precifica - coleta Booking
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 */6 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: booking-collector
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+      - run: npm run collect
+      - name: Publicar dados reais
+        run: |
+          git config user.name "precifica-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if ! git diff --cached --quiet; then
+            git commit -m "Atualizar tarifas verificadas"
+            git push
+          fi
