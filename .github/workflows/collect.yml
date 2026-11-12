@@ -1,5 +1,8 @@
 name: Precifica - coleta Booking
 on:
+  push:
+    branches: [main]
+    paths: ['hotels.json', 'collector.mjs', '.github/workflows/collect.yml']
   workflow_dispatch:
   schedule:
     - cron: '15 */6 * * *'
