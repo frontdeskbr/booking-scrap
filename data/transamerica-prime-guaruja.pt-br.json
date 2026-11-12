@@ -1,18 +1,13 @@
 {
   "name": "Transamerica Prime Guarujá",
   "url": "https://www.booking.com/hotel/br/transamerica-prime-guaruja.pt-br.html",
-  "updatedAt": "2026-11-12T07:55:37.585Z",
+  "updatedAt": "2026-11-12T19:54:18.898Z",
   "currency": "BRL",
   "adults": 2,
   "rooms": 1,
   "nights": 1,
   "approximate": true,
   "rates": {
-    "2026-11-11": {
-      "price": 1400,
-      "approx": true,
-      "display": "1,4K"
-    },
     "2026-11-12": {
       "price": 1400,
       "approx": true,
