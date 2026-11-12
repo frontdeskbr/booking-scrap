@@ -39,7 +39,7 @@ for(const hotel of hotels){
   console.log('PAGE',page.url(),'TITLE',await page.title());
   console.log('BUTTONS',(await page.locator('button').allTextContents()).slice(0,35).map(x=>x.trim().slice(0,45)));
   console.log('TABLES',await page.locator('table').count(),'BODY',(await page.locator('body').innerText()).slice(0,700));
-  for(const sel of ['[data-testid="searchbox-dates-container"]','[data-testid="date-display-field-start"]','button[aria-label*="data"]','[data-testid="searchbox-dates-checkin"]']){try{let el=page.locator(sel).first();if(await el.count()){await el.click({timeout:1500});await page.waitForTimeout(600);break}}catch{}}
+  for(const sel of ['button:has-text("Visualizar preços")','[data-testid="searchbox-dates-container"]','[data-testid="date-display-field-start"]','button[aria-label*="data"]','[data-testid="searchbox-dates-checkin"]']){try{let el=page.locator(sel).first();if(await el.count()){await el.click({timeout:1500});await page.waitForTimeout(1500);console.log('AFTER CLICK TABLES',await page.locator('table').count(),'NEXT',await page.getByRole('button',{name:/mês seguinte/i}).count());break}}catch{}}
   for(let i=0;i<13;i++){
    const found=await page.evaluate(collectScript,{names});
    Object.assign(all,found);
