@@ -1,0 +1,11 @@
+{
+  "name": "precifica-booking-collector",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "collect": "node collector.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.56.1"
+  }
+}
