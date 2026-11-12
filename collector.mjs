@@ -29,6 +29,7 @@ for(const hotel of hotels){
  const all={};
  try{
   const target=new URL(hotel.url);target.searchParams.set('selected_currency','BRL');target.searchParams.set('group_adults','2');target.searchParams.set('no_rooms','1');
+  const checkin=new Date();checkin.setDate(checkin.getDate()+7);const checkout=new Date(checkin);checkout.setDate(checkout.getDate()+2);target.searchParams.set('checkin',checkin.toISOString().slice(0,10));target.searchParams.set('checkout',checkout.toISOString().slice(0,10));
   await page.goto(target.href,{waitUntil:'domcontentloaded',timeout:45000});
   await page.waitForTimeout(3500);
   console.log('PAGE',page.url(),'TITLE',await page.title());
