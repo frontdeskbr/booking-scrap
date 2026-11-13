@@ -1,7 +1,7 @@
 {
   "name": "Casa Canoa",
   "url": "https://www.booking.com/hotel/br/casa-canoa-guaruja.pt-br.html",
-  "updatedAt": "2026-11-12T19:53:31.029Z",
+  "updatedAt": "2026-11-13T06:40:32.850Z",
   "currency": "BRL",
   "adults": 2,
   "rooms": 1,
@@ -14,14 +14,14 @@
       "display": "608"
     },
     "2026-11-13": {
-      "price": 1100,
+      "price": 825,
       "approx": true,
-      "display": "1,1K"
+      "display": "825"
     },
     "2026-11-14": {
-      "price": 963,
+      "price": 853,
       "approx": true,
-      "display": "963"
+      "display": "853"
     },
     "2026-11-15": {
       "price": 631,
@@ -29,19 +29,19 @@
       "display": "631"
     },
     "2026-11-16": {
-      "price": 585,
+      "price": 561,
       "approx": true,
-      "display": "585"
+      "display": "561"
     },
     "2026-11-17": {
-      "price": 608,
+      "price": 561,
       "approx": true,
-      "display": "608"
+      "display": "561"
     },
     "2026-11-18": {
-      "price": 608,
+      "price": 561,
       "approx": true,
-      "display": "608"
+      "display": "561"
     },
     "2026-11-19": {
       "price": 1000,

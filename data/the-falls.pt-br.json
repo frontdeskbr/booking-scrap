@@ -1,7 +1,7 @@
 {
   "name": "The Falls Hotel",
   "url": "https://www.booking.com/hotel/br/the-falls.pt-br.html",
-  "updatedAt": "2026-11-12T19:53:55.688Z",
+  "updatedAt": "2026-11-13T06:40:52.849Z",
   "currency": "BRL",
   "adults": 2,
   "rooms": 1,
@@ -24,9 +24,9 @@
       "display": "897"
     },
     "2026-11-15": {
-      "price": 660,
+      "price": 704,
       "approx": true,
-      "display": "660"
+      "display": "704"
     },
     "2026-11-16": {
       "price": 616,
