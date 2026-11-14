@@ -1,7 +1,7 @@
 {
   "name": "Ilhas do Caribe",
   "url": "https://www.booking.com/hotel/br/ilhas-do-caribe.pt-br.html",
-  "updatedAt": "2026-11-13T19:40:26.843Z",
+  "updatedAt": "2026-11-14T06:18:56.780Z",
   "currency": "BRL",
   "adults": 2,
   "rooms": 1,
@@ -109,9 +109,9 @@
       "display": "594"
     },
     "2026-12-03": {
-      "price": 558,
+      "price": 594,
       "approx": true,
-      "display": "558"
+      "display": "594"
     },
     "2026-12-04": {
       "price": 878,
@@ -209,9 +209,9 @@
       "display": "1K"
     },
     "2026-12-23": {
-      "price": 898,
+      "price": 993,
       "approx": true,
-      "display": "898"
+      "display": "993"
     },
     "2026-12-24": {
       "price": 935,
