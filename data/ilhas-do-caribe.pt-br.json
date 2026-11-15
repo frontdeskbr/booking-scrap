@@ -1,42 +1,37 @@
 {
   "name": "Ilhas do Caribe",
   "url": "https://www.booking.com/hotel/br/ilhas-do-caribe.pt-br.html",
-  "updatedAt": "2026-11-15T06:26:13.810Z",
+  "updatedAt": "2026-11-15T18:51:15.061Z",
   "currency": "BRL",
   "adults": 2,
   "rooms": 1,
   "nights": 1,
   "approximate": true,
   "rates": {
-    "2026-11-14": {
-      "price": 678,
-      "approx": true,
-      "display": "678"
-    },
     "2026-11-15": {
       "price": 505,
       "approx": true,
       "display": "505"
     },
     "2026-11-16": {
-      "price": 434,
+      "price": 391,
       "approx": true,
-      "display": "434"
+      "display": "391"
     },
     "2026-11-17": {
-      "price": 494,
+      "price": 444,
       "approx": true,
-      "display": "494"
+      "display": "444"
     },
     "2026-11-18": {
-      "price": 454,
+      "price": 409,
       "approx": true,
-      "display": "454"
+      "display": "409"
     },
     "2026-11-19": {
-      "price": 774,
+      "price": 697,
       "approx": true,
-      "display": "774"
+      "display": "697"
     },
     "2026-11-20": {
       "price": null,
@@ -54,24 +49,24 @@
       "display": "549"
     },
     "2026-11-23": {
-      "price": 549,
-      "approx": true,
-      "display": "549"
-    },
-    "2026-11-24": {
-      "price": 549,
-      "approx": true,
-      "display": "549"
-    },
-    "2026-11-25": {
-      "price": 549,
-      "approx": true,
-      "display": "549"
-    },
-    "2026-11-26": {
       "price": 494,
       "approx": true,
       "display": "494"
+    },
+    "2026-11-24": {
+      "price": 494,
+      "approx": true,
+      "display": "494"
+    },
+    "2026-11-25": {
+      "price": 494,
+      "approx": true,
+      "display": "494"
+    },
+    "2026-11-26": {
+      "price": 400,
+      "approx": true,
+      "display": "400"
     },
     "2026-11-27": {
       "price": 712,
@@ -79,89 +74,89 @@
       "display": "712"
     },
     "2026-11-28": {
-      "price": 651,
+      "price": 613,
       "approx": true,
-      "display": "651"
+      "display": "613"
     },
     "2026-11-29": {
-      "price": 511,
+      "price": 434,
       "approx": true,
-      "display": "511"
+      "display": "434"
     },
     "2026-11-30": {
-      "price": 511,
+      "price": 434,
       "approx": true,
-      "display": "511"
+      "display": "434"
     },
     "2026-12-01": {
-      "price": 699,
+      "price": 594,
       "approx": true,
-      "display": "699"
+      "display": "594"
     },
     "2026-12-02": {
-      "price": 594,
+      "price": 505,
       "approx": true,
-      "display": "594"
+      "display": "505"
     },
     "2026-12-03": {
-      "price": 594,
+      "price": 505,
       "approx": true,
-      "display": "594"
+      "display": "505"
     },
     "2026-12-04": {
-      "price": 934,
+      "price": 794,
       "approx": true,
-      "display": "934"
+      "display": "794"
     },
     "2026-12-05": {
-      "price": 744,
+      "price": 632,
       "approx": true,
-      "display": "744"
+      "display": "632"
     },
     "2026-12-06": {
-      "price": 609,
+      "price": 517,
       "approx": true,
-      "display": "609"
+      "display": "517"
     },
     "2026-12-07": {
-      "price": 609,
+      "price": 517,
       "approx": true,
-      "display": "609"
+      "display": "517"
     },
     "2026-12-08": {
-      "price": 558,
+      "price": 474,
       "approx": true,
-      "display": "558"
+      "display": "474"
     },
     "2026-12-09": {
-      "price": 558,
+      "price": 474,
       "approx": true,
-      "display": "558"
+      "display": "474"
     },
     "2026-12-10": {
-      "price": 558,
+      "price": 474,
       "approx": true,
-      "display": "558"
+      "display": "474"
     },
     "2026-12-11": {
-      "price": 798,
-      "approx": true,
-      "display": "798"
-    },
-    "2026-12-12": {
       "price": 678,
       "approx": true,
       "display": "678"
     },
-    "2026-12-13": {
-      "price": 558,
+    "2026-12-12": {
+      "price": 576,
       "approx": true,
-      "display": "558"
+      "display": "576"
+    },
+    "2026-12-13": {
+      "price": 474,
+      "approx": true,
+      "display": "474"
     },
     "2026-12-14": {
-      "price": 558,
+      "price": 474,
       "approx": true,
-      "display": "558"
+      "display": "474"
     },
     "2026-12-15": {
       "price": 558,
@@ -184,29 +179,29 @@
       "display": "798"
     },
     "2026-12-19": {
-      "price": 890,
+      "price": 852,
       "approx": true,
-      "display": "890"
+      "display": "852"
     },
     "2026-12-20": {
-      "price": 746,
+      "price": 671,
       "approx": true,
-      "display": "746"
+      "display": "671"
     },
     "2026-12-21": {
-      "price": 746,
+      "price": 671,
       "approx": true,
-      "display": "746"
+      "display": "671"
     },
     "2026-12-22": {
-      "price": 1000,
+      "price": 934,
       "approx": true,
-      "display": "1K"
+      "display": "934"
     },
     "2026-12-23": {
-      "price": 993,
+      "price": 894,
       "approx": true,
-      "display": "993"
+      "display": "894"
     },
     "2026-12-24": {
       "price": 1000,

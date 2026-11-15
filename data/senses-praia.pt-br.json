@@ -1,27 +1,22 @@
 {
   "name": "Senses Praia",
   "url": "https://www.booking.com/hotel/br/senses-praia.pt-br.html",
-  "updatedAt": "2026-11-15T06:26:33.461Z",
+  "updatedAt": "2026-11-15T18:51:34.591Z",
   "currency": "BRL",
   "adults": 2,
   "rooms": 1,
   "nights": 1,
   "approximate": true,
   "rates": {
-    "2026-11-14": {
-      "price": 708,
-      "approx": true,
-      "display": "708"
-    },
     "2026-11-15": {
-      "price": 531,
+      "price": 354,
       "approx": true,
-      "display": "531"
+      "display": "354"
     },
     "2026-11-16": {
-      "price": 330,
+      "price": 354,
       "approx": true,
-      "display": "330"
+      "display": "354"
     },
     "2026-11-17": {
       "price": 330,
@@ -29,14 +24,14 @@
       "display": "330"
     },
     "2026-11-18": {
-      "price": 283,
+      "price": 663,
       "approx": true,
-      "display": "283"
+      "display": "663"
     },
     "2026-11-19": {
-      "price": 644,
+      "price": 663,
       "approx": true,
-      "display": "644"
+      "display": "663"
     },
     "2026-11-20": {
       "price": null,
