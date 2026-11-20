@@ -1,18 +1,13 @@
 {
   "name": "The Falls Hotel",
   "url": "https://www.booking.com/hotel/br/the-falls.pt-br.html",
-  "updatedAt": "2026-11-20T07:11:45.998Z",
+  "updatedAt": "2026-11-20T20:12:19.883Z",
   "currency": "BRL",
   "adults": 2,
   "rooms": 1,
   "nights": 1,
   "approximate": true,
   "rates": {
-    "2026-11-19": {
-      "price": null,
-      "approx": true,
-      "display": "—"
-    },
     "2026-11-20": {
       "price": null,
       "approx": true,
@@ -24,9 +19,9 @@
       "display": "—"
     },
     "2026-11-22": {
-      "price": 704,
+      "price": 766,
       "approx": true,
-      "display": "704"
+      "display": "766"
     },
     "2026-11-23": {
       "price": 616,
@@ -824,129 +819,129 @@
       "display": "673"
     },
     "2027-05-01": {
-      "price": null,
+      "price": 660,
       "approx": true,
-      "display": "—"
+      "display": "660"
     },
     "2027-05-02": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-03": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-04": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-05": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-06": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-07": {
-      "price": null,
+      "price": 660,
       "approx": true,
-      "display": "—"
+      "display": "660"
     },
     "2027-05-08": {
-      "price": null,
+      "price": 660,
       "approx": true,
-      "display": "—"
+      "display": "660"
     },
     "2027-05-09": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-10": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-11": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-12": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-13": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-14": {
-      "price": null,
+      "price": 660,
       "approx": true,
-      "display": "—"
+      "display": "660"
     },
     "2027-05-15": {
-      "price": null,
+      "price": 660,
       "approx": true,
-      "display": "—"
+      "display": "660"
     },
     "2027-05-16": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-17": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-18": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-19": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-20": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-21": {
-      "price": null,
+      "price": 660,
       "approx": true,
-      "display": "—"
+      "display": "660"
     },
     "2027-05-22": {
-      "price": null,
+      "price": 660,
       "approx": true,
-      "display": "—"
+      "display": "660"
     },
     "2027-05-23": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-24": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-25": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-26": {
       "price": null,
@@ -969,164 +964,164 @@
       "display": "—"
     },
     "2027-05-30": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-05-31": {
-      "price": null,
+      "price": 547,
       "approx": true,
-      "display": "—"
+      "display": "547"
     },
     "2027-06-01": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-02": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-03": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-04": {
-      "price": null,
+      "price": 616,
       "approx": true,
-      "display": "—"
+      "display": "616"
     },
     "2027-06-05": {
-      "price": null,
+      "price": 616,
       "approx": true,
-      "display": "—"
+      "display": "616"
     },
     "2027-06-06": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-07": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-08": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-09": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-10": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-11": {
-      "price": null,
+      "price": 616,
       "approx": true,
-      "display": "—"
+      "display": "616"
     },
     "2027-06-12": {
-      "price": null,
+      "price": 616,
       "approx": true,
-      "display": "—"
+      "display": "616"
     },
     "2027-06-13": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-14": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-15": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-16": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-17": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-18": {
-      "price": null,
+      "price": 616,
       "approx": true,
-      "display": "—"
+      "display": "616"
     },
     "2027-06-19": {
-      "price": null,
+      "price": 616,
       "approx": true,
-      "display": "—"
+      "display": "616"
     },
     "2027-06-20": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-21": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-22": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-23": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-24": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-25": {
-      "price": null,
+      "price": 616,
       "approx": true,
-      "display": "—"
+      "display": "616"
     },
     "2027-06-26": {
-      "price": null,
+      "price": 616,
       "approx": true,
-      "display": "—"
+      "display": "616"
     },
     "2027-06-27": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-28": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-29": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-06-30": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-07-01": {
       "price": 628,
@@ -1284,159 +1279,159 @@
       "display": "598"
     },
     "2027-08-01": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-02": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-03": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-04": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-05": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-06": {
-      "price": null,
+      "price": 616,
       "approx": true,
-      "display": "—"
+      "display": "616"
     },
     "2027-08-07": {
-      "price": null,
+      "price": 616,
       "approx": true,
-      "display": "—"
+      "display": "616"
     },
     "2027-08-08": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-09": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-10": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-11": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-12": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-13": {
-      "price": null,
+      "price": 616,
       "approx": true,
-      "display": "—"
+      "display": "616"
     },
     "2027-08-14": {
-      "price": null,
+      "price": 616,
       "approx": true,
-      "display": "—"
+      "display": "616"
     },
     "2027-08-15": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-16": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-17": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-18": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-19": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-20": {
-      "price": null,
+      "price": 616,
       "approx": true,
-      "display": "—"
+      "display": "616"
     },
     "2027-08-21": {
-      "price": null,
+      "price": 616,
       "approx": true,
-      "display": "—"
+      "display": "616"
     },
     "2027-08-22": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-23": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-24": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-25": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-26": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-27": {
-      "price": null,
+      "price": 616,
       "approx": true,
-      "display": "—"
+      "display": "616"
     },
     "2027-08-28": {
-      "price": null,
+      "price": 616,
       "approx": true,
-      "display": "—"
+      "display": "616"
     },
     "2027-08-29": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-30": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-08-31": {
-      "price": null,
+      "price": 495,
       "approx": true,
-      "display": "—"
+      "display": "495"
     },
     "2027-09-01": {
       "price": null,
