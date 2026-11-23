@@ -1,18 +1,13 @@
 {
   "name": "Ilhas do Caribe",
   "url": "https://www.booking.com/hotel/br/ilhas-do-caribe.pt-br.html",
-  "updatedAt": "2026-11-23T07:33:26.454Z",
+  "updatedAt": "2026-11-23T23:56:54.778Z",
   "currency": "BRL",
   "adults": 2,
   "rooms": 1,
   "nights": 1,
   "approximate": true,
   "rates": {
-    "2026-11-22": {
-      "price": 494,
-      "approx": true,
-      "display": "494"
-    },
     "2026-11-23": {
       "price": 494,
       "approx": true,
@@ -259,34 +254,34 @@
       "display": "941"
     },
     "2027-01-11": {
-      "price": 658,
+      "price": 922,
       "approx": true,
-      "display": "658"
+      "display": "922"
     },
     "2027-01-12": {
-      "price": 658,
+      "price": 922,
       "approx": true,
-      "display": "658"
+      "display": "922"
     },
     "2027-01-13": {
-      "price": 658,
+      "price": 922,
       "approx": true,
-      "display": "658"
+      "display": "922"
     },
     "2027-01-14": {
-      "price": 658,
+      "price": 922,
       "approx": true,
-      "display": "658"
+      "display": "922"
     },
     "2027-01-15": {
-      "price": 874,
+      "price": 1100,
       "approx": true,
-      "display": "874"
+      "display": "1,1K"
     },
     "2027-01-16": {
-      "price": 766,
+      "price": 897,
       "approx": true,
-      "display": "766"
+      "display": "897"
     },
     "2027-01-17": {
       "price": 658,
@@ -294,24 +289,24 @@
       "display": "658"
     },
     "2027-01-18": {
-      "price": 658,
+      "price": 757,
       "approx": true,
-      "display": "658"
+      "display": "757"
     },
     "2027-01-19": {
-      "price": 658,
+      "price": 757,
       "approx": true,
-      "display": "658"
+      "display": "757"
     },
     "2027-01-20": {
-      "price": 658,
+      "price": 757,
       "approx": true,
-      "display": "658"
+      "display": "757"
     },
     "2027-01-21": {
-      "price": 658,
+      "price": 757,
       "approx": true,
-      "display": "658"
+      "display": "757"
     },
     "2027-01-22": {
       "price": 874,
