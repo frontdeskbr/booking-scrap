@@ -1,32 +1,27 @@
 {
   "name": "Senses Praia",
   "url": "https://www.booking.com/hotel/br/senses-praia.pt-br.html",
-  "updatedAt": "2026-11-24T09:53:09.390Z",
+  "updatedAt": "2026-11-24T22:25:30.968Z",
   "currency": "BRL",
   "adults": 2,
   "rooms": 1,
   "nights": 1,
   "approximate": true,
   "rates": {
-    "2026-11-23": {
-      "price": 330,
-      "approx": true,
-      "display": "330"
-    },
     "2026-11-24": {
-      "price": 330,
+      "price": 687,
       "approx": true,
-      "display": "330"
+      "display": "687"
     },
     "2026-11-25": {
-      "price": 330,
+      "price": 614,
       "approx": true,
-      "display": "330"
+      "display": "614"
     },
     "2026-11-26": {
-      "price": null,
+      "price": 236,
       "approx": true,
-      "display": "—"
+      "display": "236"
     },
     "2026-11-27": {
       "price": null,
@@ -39,14 +34,14 @@
       "display": "—"
     },
     "2026-11-29": {
-      "price": null,
+      "price": 644,
       "approx": true,
-      "display": "—"
+      "display": "644"
     },
     "2026-11-30": {
-      "price": 614,
+      "price": 330,
       "approx": true,
-      "display": "614"
+      "display": "330"
     },
     "2026-12-01": {
       "price": 614,
@@ -134,34 +129,34 @@
       "display": "520"
     },
     "2026-12-18": {
-      "price": null,
+      "price": 645,
       "approx": true,
-      "display": "—"
+      "display": "645"
     },
     "2026-12-19": {
-      "price": null,
+      "price": 583,
       "approx": true,
-      "display": "—"
+      "display": "583"
     },
     "2026-12-20": {
-      "price": null,
+      "price": 520,
       "approx": true,
-      "display": "—"
+      "display": "520"
     },
     "2026-12-21": {
-      "price": null,
+      "price": 520,
       "approx": true,
-      "display": "—"
+      "display": "520"
     },
     "2026-12-22": {
-      "price": null,
+      "price": 520,
       "approx": true,
-      "display": "—"
+      "display": "520"
     },
     "2026-12-23": {
-      "price": null,
+      "price": 520,
       "approx": true,
-      "display": "—"
+      "display": "520"
     },
     "2026-12-24": {
       "price": null,
@@ -224,84 +219,84 @@
       "display": "—"
     },
     "2027-01-05": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-06": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-07": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-08": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-09": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-10": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-11": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-12": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-13": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-14": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-15": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-16": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-17": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-18": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-19": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-20": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-21": {
       "price": 710,
