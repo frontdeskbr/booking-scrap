@@ -1,27 +1,22 @@
 {
   "name": "Senses Praia",
   "url": "https://www.booking.com/hotel/br/senses-praia.pt-br.html",
-  "updatedAt": "2026-11-25T08:29:17.741Z",
+  "updatedAt": "2026-11-25T21:41:01.054Z",
   "currency": "BRL",
   "adults": 2,
   "rooms": 1,
   "nights": 1,
   "approximate": true,
   "rates": {
-    "2026-11-24": {
-      "price": 687,
-      "approx": true,
-      "display": "687"
-    },
     "2026-11-25": {
-      "price": 614,
+      "price": 663,
       "approx": true,
-      "display": "614"
+      "display": "663"
     },
     "2026-11-26": {
-      "price": 236,
+      "price": 644,
       "approx": true,
-      "display": "236"
+      "display": "644"
     },
     "2026-11-27": {
       "price": null,
@@ -234,14 +229,14 @@
       "display": "710"
     },
     "2027-01-08": {
-      "price": 710,
+      "price": null,
       "approx": true,
-      "display": "710"
+      "display": "—"
     },
     "2027-01-09": {
-      "price": 710,
+      "price": null,
       "approx": true,
-      "display": "710"
+      "display": "—"
     },
     "2027-01-10": {
       "price": 710,
@@ -269,14 +264,14 @@
       "display": "710"
     },
     "2027-01-15": {
-      "price": 710,
+      "price": null,
       "approx": true,
-      "display": "710"
+      "display": "—"
     },
     "2027-01-16": {
-      "price": 710,
+      "price": null,
       "approx": true,
-      "display": "710"
+      "display": "—"
     },
     "2027-01-17": {
       "price": 710,
@@ -304,14 +299,14 @@
       "display": "710"
     },
     "2027-01-22": {
-      "price": 710,
+      "price": null,
       "approx": true,
-      "display": "710"
+      "display": "—"
     },
     "2027-01-23": {
-      "price": 710,
+      "price": null,
       "approx": true,
-      "display": "710"
+      "display": "—"
     },
     "2027-01-24": {
       "price": 710,
@@ -339,14 +334,14 @@
       "display": "710"
     },
     "2027-01-29": {
-      "price": 710,
+      "price": null,
       "approx": true,
-      "display": "710"
+      "display": "—"
     },
     "2027-01-30": {
-      "price": 710,
+      "price": null,
       "approx": true,
-      "display": "710"
+      "display": "—"
     },
     "2027-01-31": {
       "price": 710,
@@ -394,9 +389,9 @@
       "display": "—"
     },
     "2027-02-09": {
-      "price": 710,
+      "price": 514,
       "approx": true,
-      "display": "710"
+      "display": "514"
     },
     "2027-02-10": {
       "price": 448,

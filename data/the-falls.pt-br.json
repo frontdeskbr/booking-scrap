@@ -1,18 +1,13 @@
 {
   "name": "The Falls Hotel",
   "url": "https://www.booking.com/hotel/br/the-falls.pt-br.html",
-  "updatedAt": "2026-11-25T08:28:15.039Z",
+  "updatedAt": "2026-11-25T21:39:57.617Z",
   "currency": "BRL",
   "adults": 2,
   "rooms": 1,
   "nights": 1,
   "approximate": true,
   "rates": {
-    "2026-11-24": {
-      "price": 616,
-      "approx": true,
-      "display": "616"
-    },
     "2026-11-25": {
       "price": 616,
       "approx": true,
@@ -59,14 +54,14 @@
       "display": "673"
     },
     "2026-12-04": {
-      "price": 876,
+      "price": 858,
       "approx": true,
-      "display": "876"
+      "display": "858"
     },
     "2026-12-05": {
-      "price": 760,
+      "price": 753,
       "approx": true,
-      "display": "760"
+      "display": "753"
     },
     "2026-12-06": {
       "price": 701,
@@ -94,14 +89,14 @@
       "display": "673"
     },
     "2026-12-11": {
-      "price": 820,
+      "price": 804,
       "approx": true,
-      "display": "820"
+      "display": "804"
     },
     "2026-12-12": {
-      "price": 760,
+      "price": 753,
       "approx": true,
-      "display": "760"
+      "display": "753"
     },
     "2026-12-13": {
       "price": 701,
@@ -159,19 +154,19 @@
       "display": "758"
     },
     "2026-12-24": {
-      "price": 1400,
+      "price": null,
       "approx": true,
-      "display": "1,4K"
+      "display": "—"
     },
     "2026-12-25": {
-      "price": 1200,
+      "price": null,
       "approx": true,
-      "display": "1,2K"
+      "display": "—"
     },
     "2026-12-26": {
-      "price": 1100,
+      "price": null,
       "approx": true,
-      "display": "1,1K"
+      "display": "—"
     },
     "2026-12-27": {
       "price": 876,
@@ -184,14 +179,14 @@
       "display": "876"
     },
     "2026-12-29": {
-      "price": 2500,
+      "price": null,
       "approx": true,
-      "display": "2,5K"
+      "display": "—"
     },
     "2026-12-30": {
-      "price": 2600,
+      "price": null,
       "approx": true,
-      "display": "2,6K"
+      "display": "—"
     },
     "2026-12-31": {
       "price": null,
