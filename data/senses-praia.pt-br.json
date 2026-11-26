@@ -1,7 +1,7 @@
 {
   "name": "Senses Praia",
   "url": "https://www.booking.com/hotel/br/senses-praia.pt-br.html",
-  "updatedAt": "2026-11-25T21:41:01.054Z",
+  "updatedAt": "2026-11-26T08:14:01.597Z",
   "currency": "BRL",
   "adults": 2,
   "rooms": 1,
@@ -9,14 +9,14 @@
   "approximate": true,
   "rates": {
     "2026-11-25": {
-      "price": 663,
+      "price": 330,
       "approx": true,
-      "display": "663"
+      "display": "330"
     },
     "2026-11-26": {
-      "price": 644,
+      "price": 330,
       "approx": true,
-      "display": "644"
+      "display": "330"
     },
     "2026-11-27": {
       "price": null,
@@ -29,9 +29,9 @@
       "display": "—"
     },
     "2026-11-29": {
-      "price": 644,
+      "price": 330,
       "approx": true,
-      "display": "644"
+      "display": "330"
     },
     "2026-11-30": {
       "price": 330,
@@ -39,29 +39,29 @@
       "display": "330"
     },
     "2026-12-01": {
-      "price": 614,
+      "price": 472,
       "approx": true,
-      "display": "614"
+      "display": "472"
     },
     "2026-12-02": {
-      "price": 614,
+      "price": 472,
       "approx": true,
-      "display": "614"
+      "display": "472"
     },
     "2026-12-03": {
-      "price": 644,
+      "price": 472,
       "approx": true,
-      "display": "644"
+      "display": "472"
     },
     "2026-12-04": {
-      "price": 644,
+      "price": 472,
       "approx": true,
-      "display": "644"
+      "display": "472"
     },
     "2026-12-05": {
-      "price": 635,
+      "price": 1200,
       "approx": true,
-      "display": "635"
+      "display": "1,2K"
     },
     "2026-12-06": {
       "price": 520,
@@ -84,79 +84,79 @@
       "display": "520"
     },
     "2026-12-10": {
-      "price": 520,
+      "price": 709,
       "approx": true,
-      "display": "520"
+      "display": "709"
     },
     "2026-12-11": {
-      "price": 645,
+      "price": 709,
       "approx": true,
-      "display": "645"
+      "display": "709"
     },
     "2026-12-12": {
-      "price": 680,
+      "price": 894,
       "approx": true,
-      "display": "680"
+      "display": "894"
     },
     "2026-12-13": {
-      "price": 520,
+      "price": 709,
       "approx": true,
-      "display": "520"
+      "display": "709"
     },
     "2026-12-14": {
-      "price": 546,
+      "price": 709,
       "approx": true,
-      "display": "546"
+      "display": "709"
     },
     "2026-12-15": {
-      "price": 546,
+      "price": 709,
       "approx": true,
-      "display": "546"
+      "display": "709"
     },
     "2026-12-16": {
-      "price": 520,
+      "price": 709,
       "approx": true,
-      "display": "520"
+      "display": "709"
     },
     "2026-12-17": {
-      "price": 520,
+      "price": 709,
       "approx": true,
-      "display": "520"
+      "display": "709"
     },
     "2026-12-18": {
-      "price": 645,
+      "price": 709,
       "approx": true,
-      "display": "645"
+      "display": "709"
     },
     "2026-12-19": {
-      "price": 583,
+      "price": 709,
       "approx": true,
-      "display": "583"
+      "display": "709"
     },
     "2026-12-20": {
-      "price": 520,
+      "price": 709,
       "approx": true,
-      "display": "520"
+      "display": "709"
     },
     "2026-12-21": {
-      "price": 520,
+      "price": 709,
       "approx": true,
-      "display": "520"
+      "display": "709"
     },
     "2026-12-22": {
-      "price": 520,
+      "price": 709,
       "approx": true,
-      "display": "520"
+      "display": "709"
     },
     "2026-12-23": {
-      "price": 520,
+      "price": 709,
       "approx": true,
-      "display": "520"
+      "display": "709"
     },
     "2026-12-24": {
-      "price": null,
+      "price": 673,
       "approx": true,
-      "display": "—"
+      "display": "673"
     },
     "2026-12-25": {
       "price": null,
@@ -169,29 +169,29 @@
       "display": "—"
     },
     "2026-12-27": {
-      "price": null,
+      "price": 645,
       "approx": true,
-      "display": "—"
+      "display": "645"
     },
     "2026-12-28": {
-      "price": null,
+      "price": 645,
       "approx": true,
-      "display": "—"
+      "display": "645"
     },
     "2026-12-29": {
-      "price": null,
+      "price": 645,
       "approx": true,
-      "display": "—"
+      "display": "645"
     },
     "2026-12-30": {
-      "price": null,
+      "price": 645,
       "approx": true,
-      "display": "—"
+      "display": "645"
     },
     "2026-12-31": {
-      "price": null,
+      "price": 1700,
       "approx": true,
-      "display": "—"
+      "display": "1,7K"
     },
     "2027-01-01": {
       "price": null,
@@ -204,14 +204,14 @@
       "display": "—"
     },
     "2027-01-03": {
-      "price": null,
+      "price": 645,
       "approx": true,
-      "display": "—"
+      "display": "645"
     },
     "2027-01-04": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-05": {
       "price": 710,
@@ -229,14 +229,14 @@
       "display": "710"
     },
     "2027-01-08": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-09": {
-      "price": null,
+      "price": 710,
       "approx": true,
-      "display": "—"
+      "display": "710"
     },
     "2027-01-10": {
       "price": 710,
@@ -404,14 +404,14 @@
       "display": "448"
     },
     "2027-02-12": {
-      "price": 448,
+      "price": 547,
       "approx": true,
-      "display": "448"
+      "display": "547"
     },
     "2027-02-13": {
-      "price": 645,
+      "price": 547,
       "approx": true,
-      "display": "645"
+      "display": "547"
     },
     "2027-02-14": {
       "price": 448,
@@ -439,14 +439,14 @@
       "display": "448"
     },
     "2027-02-19": {
-      "price": 448,
+      "price": 547,
       "approx": true,
-      "display": "448"
+      "display": "547"
     },
     "2027-02-20": {
-      "price": 645,
+      "price": 547,
       "approx": true,
-      "display": "645"
+      "display": "547"
     },
     "2027-02-21": {
       "price": 448,
@@ -474,14 +474,14 @@
       "display": "448"
     },
     "2027-02-26": {
-      "price": 448,
+      "price": 547,
       "approx": true,
-      "display": "448"
+      "display": "547"
     },
     "2027-02-27": {
-      "price": 645,
+      "price": 547,
       "approx": true,
-      "display": "645"
+      "display": "547"
     },
     "2027-02-28": {
       "price": 448,
