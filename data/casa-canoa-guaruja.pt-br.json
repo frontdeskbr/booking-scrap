@@ -1,32 +1,27 @@
 {
   "name": "Casa Canoa",
   "url": "https://www.booking.com/hotel/br/casa-canoa-guaruja.pt-br.html",
-  "updatedAt": "2026-11-26T08:12:38.169Z",
+  "updatedAt": "2026-11-26T21:28:44.783Z",
   "currency": "BRL",
   "adults": 2,
   "rooms": 1,
   "nights": 1,
   "approximate": true,
   "rates": {
-    "2026-11-25": {
-      "price": 720,
-      "approx": true,
-      "display": "720"
-    },
     "2026-11-26": {
       "price": 847,
       "approx": true,
       "display": "847"
     },
     "2026-11-27": {
-      "price": null,
+      "price": 1300,
       "approx": true,
-      "display": "—"
+      "display": "1,3K"
     },
     "2026-11-28": {
-      "price": null,
+      "price": 1500,
       "approx": true,
-      "display": "—"
+      "display": "1,5K"
     },
     "2026-11-29": {
       "price": null,
@@ -34,59 +29,59 @@
       "display": "—"
     },
     "2026-11-30": {
-      "price": 612,
+      "price": 561,
       "approx": true,
-      "display": "612"
+      "display": "561"
     },
     "2026-12-01": {
-      "price": 880,
+      "price": 660,
       "approx": true,
-      "display": "880"
+      "display": "660"
     },
     "2026-12-02": {
-      "price": 926,
+      "price": 655,
       "approx": true,
-      "display": "926"
+      "display": "655"
     },
     "2026-12-03": {
-      "price": 1100,
+      "price": 770,
       "approx": true,
-      "display": "1,1K"
+      "display": "770"
     },
     "2026-12-04": {
-      "price": 1100,
+      "price": 842,
       "approx": true,
-      "display": "1,1K"
+      "display": "842"
     },
     "2026-12-05": {
-      "price": 1300,
+      "price": 935,
       "approx": true,
-      "display": "1,3K"
+      "display": "935"
     },
     "2026-12-06": {
-      "price": 926,
+      "price": 770,
       "approx": true,
-      "display": "926"
+      "display": "770"
     },
     "2026-12-07": {
-      "price": 926,
+      "price": 660,
       "approx": true,
-      "display": "926"
+      "display": "660"
     },
     "2026-12-08": {
-      "price": 926,
+      "price": 561,
       "approx": true,
-      "display": "926"
+      "display": "561"
     },
     "2026-12-09": {
-      "price": 926,
+      "price": 655,
       "approx": true,
-      "display": "926"
+      "display": "655"
     },
     "2026-12-10": {
-      "price": 926,
+      "price": 748,
       "approx": true,
-      "display": "926"
+      "display": "748"
     },
     "2026-12-11": {
       "price": null,
@@ -99,9 +94,9 @@
       "display": "—"
     },
     "2026-12-13": {
-      "price": 1000,
+      "price": 748,
       "approx": true,
-      "display": "1K"
+      "display": "748"
     },
     "2026-12-14": {
       "price": null,
@@ -114,19 +109,19 @@
       "display": "—"
     },
     "2026-12-16": {
-      "price": 1000,
+      "price": 748,
       "approx": true,
-      "display": "1K"
+      "display": "748"
     },
     "2026-12-17": {
+      "price": 748,
+      "approx": true,
+      "display": "748"
+    },
+    "2026-12-18": {
       "price": 1000,
       "approx": true,
       "display": "1K"
-    },
-    "2026-12-18": {
-      "price": 1200,
-      "approx": true,
-      "display": "1,2K"
     },
     "2026-12-19": {
       "price": null,
